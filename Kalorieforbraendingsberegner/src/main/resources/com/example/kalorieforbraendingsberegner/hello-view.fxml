@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" style="-fx-padding: 20; -fx-background-color: #f5fafd;">
+    <Label text="Kalorieberegner" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2a3d45;" />
+
+    <VBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 10;">
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Vælg aktivitet:" style="-fx-font-size: 14px; -fx-text-fill: #2a3d45;" />
+            <ComboBox fx:id="activityComboBox" promptText="Vælg aktivitet" style="-fx-pref-width: 200; -fx-padding: 5; -fx-border-color: #b0d9e3; -fx-border-radius: 5; -fx-background-radius: 5;" />
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Hvor længe? (minutter)" style="-fx-font-size: 14px; -fx-text-fill: #2a3d45;" />
+            <TextField fx:id="timeField" promptText="Antal minutter" style="-fx-pref-width: 200; -fx-padding: 5; -fx-border-color: #b0d9e3; -fx-border-radius: 5; -fx-background-radius: 5;" />
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Hvad er din vægt? (kg)" style="-fx-font-size: 14px; -fx-text-fill: #2a3d45;" />
+            <TextField fx:id="weightField" promptText="Antal Kg" style="-fx-pref-width: 200; -fx-padding: 5; -fx-border-color: #b0d9e3; -fx-border-radius: 5; -fx-background-radius: 5;" />
+        </HBox>
+    </VBox>
+
+    <Button text="Beregn" fx:id="calculateButton" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #ffffff; -fx-background-color: #50a7b8; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10 20;" />
+
+    <TextArea fx:id="resultArea" editable="false" wrapText="true" style="-fx-pref-width: 300; -fx-pref-height: 100; -fx-padding: 10; -fx-font-size: 14px; -fx-border-color: #b0d9e3; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: #ffffff;" />
+</VBox>
